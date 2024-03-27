@@ -1,0 +1,17 @@
+create database christuniversitymanagementsystem;
+show databases;
+use christuniversitymanagementsystem;
+create table login(username varchar(25),password varchar(25));
+insert into login values('admin','12345');
+select * from login;
+show databases;
+use christuniversitymanagementsystem;
+create table student(name varchar(40),father_name varchar(40), roll_number varchar(20), dob varchar(20),address varchar (100), phone varchar(20),email varchar(20),class_x varchar(20), class_xii varchar(20), aadhar varchar(20),course varchar(20),gender varchar(20));
+select * from student;
+create table teacher(name varchar(40),father_name varchar(40), faculty_id varchar(20), dob varchar(20),address varchar (100), phone varchar(20),email varchar(20),Qualification varchar(20), salary varchar(20), aadhar varchar(20),deaprtment varchar(20),gender varchar(20));
+create table studentleave(roll_number varchar(20),from_date varchar(20),to_date varchar(20),duration varchar(20));
+select * from studentleave;
+create table teacherleave(faculty_id varchar(20),from_date varchar(20),to_date varchar(20),duration varchar(20));
+select * from teacherleave;
+create table entermarks(roll_no varchar(20),sem varchar(20),s1 varchar(10),s2 varchar(10),s3 varchar(10),s4 varchar(10),s5 varchar(10),m1 varchar(10),m2 varchar(10),m3 varchar(10),m4 varchar(10),m5 varchar(10));
+select * from entermarks;
